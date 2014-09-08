@@ -1,0 +1,7 @@
+parameters:
+#    kevin_enquete.example.class: Kevin\EnqueteBundle\Example
+
+services:
+#    kevin_enquete.example:
+#        class: %kevin_enquete.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
