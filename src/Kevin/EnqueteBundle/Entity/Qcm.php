@@ -39,4 +39,60 @@ class Qcm
     private $questionQuestion;
 
 
+
+    /**
+     * Get idQcm
+     *
+     * @return integer 
+     */
+    public function getIdQcm()
+    {
+        return $this->idQcm;
+    }
+
+    /**
+     * Set libelle
+     *
+     * @param string $libelle
+     * @return Qcm
+     */
+    public function setLibelle($libelle)
+    {
+        $this->libelle = $libelle;
+
+        return $this;
+    }
+
+    /**
+     * Get libelle
+     *
+     * @return string 
+     */
+    public function getLibelle()
+    {
+        return $this->libelle;
+    }
+
+    /**
+     * Set questionQuestion
+     *
+     * @param \Kevin\EnqueteBundle\Entity\Question $questionQuestion
+     * @return Qcm
+     */
+    public function setQuestionQuestion(\Kevin\EnqueteBundle\Entity\Question $questionQuestion = null)
+    {
+        $this->questionQuestion = $questionQuestion;
+
+        return $this;
+    }
+
+    /**
+     * Get questionQuestion
+     *
+     * @return \Kevin\EnqueteBundle\Entity\Question 
+     */
+    public function getQuestionQuestion()
+    {
+        return $this->questionQuestion;
+    }
 }

@@ -25,4 +25,14 @@ class Utilisateur extends BaseUser
         parent::__construct();
         // your own logic
     }
+
+    /**
+     * Get idUtilisateur
+     *
+     * @return integer 
+     */
+    public function getIdUtilisateur()
+    {
+        return $this->idUtilisateur;
+    }
 }

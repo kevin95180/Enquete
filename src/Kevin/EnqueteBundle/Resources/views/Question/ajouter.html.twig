@@ -1,7 +1,23 @@
-{% extends "::base.html.twig" %}
+{% extends "KevinEnqueteBundle::base.html.twig" %}
+{% import "KevinEnqueteBundle::bootstrap.html.twig" as bootstrap%}
 
-{% block title %}KevinEnqueteBundle:Question:ajouter{% endblock %}
+{% block title %}Enquete{% endblock %}
 
-{% block body %}
-<h1>Welcome to the Question:ajouter page</h1>
+{% block contenu %}
+    <h2>Créer une enquete: </h2>
+
+    {{form_start(form, {'attr':{'class':'form-horizontal', 'role':'form', 'novalidate':''} })}}
+
+    {{bootstrap.formGroup(form.libelle, 'libelle')}}
+    {{bootstrap.formGroup(form.typeQuestionTypeQuestion, 'Type de question')}}
+    {{bootstrap.formGroup(form.enqueteEnquete, 'Enquete')}}
+
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            {{form_widget(form.save, {'attr':{'class':'btn btn-primary'} }) }}
+        </div>
+    </div>
+
+    {{form_end(form)}}
+
 {% endblock %}

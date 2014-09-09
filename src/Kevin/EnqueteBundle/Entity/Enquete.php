@@ -39,4 +39,60 @@ class Enquete
     private $utilisateurUtilisateur;
 
 
+
+    /**
+     * Get idEnquete
+     *
+     * @return integer 
+     */
+    public function getIdEnquete()
+    {
+        return $this->idEnquete;
+    }
+
+    /**
+     * Set titre
+     *
+     * @param string $titre
+     * @return Enquete
+     */
+    public function setTitre($titre)
+    {
+        $this->titre = $titre;
+
+        return $this;
+    }
+
+    /**
+     * Get titre
+     *
+     * @return string 
+     */
+    public function getTitre()
+    {
+        return $this->titre;
+    }
+
+    /**
+     * Set utilisateurUtilisateur
+     *
+     * @param \Kevin\EnqueteBundle\Entity\Utilisateur $utilisateurUtilisateur
+     * @return Enquete
+     */
+    public function setUtilisateurUtilisateur(\Kevin\EnqueteBundle\Entity\Utilisateur $utilisateurUtilisateur = null)
+    {
+        $this->utilisateurUtilisateur = $utilisateurUtilisateur;
+
+        return $this;
+    }
+
+    /**
+     * Get utilisateurUtilisateur
+     *
+     * @return \Kevin\EnqueteBundle\Entity\Utilisateur 
+     */
+    public function getUtilisateurUtilisateur()
+    {
+        return $this->utilisateurUtilisateur;
+    }
 }

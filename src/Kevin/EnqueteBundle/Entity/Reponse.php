@@ -46,4 +46,83 @@ class Reponse
     private $questionQuestion;
 
 
+
+    /**
+     * Get idReponse
+     *
+     * @return integer 
+     */
+    public function getIdReponse()
+    {
+        return $this->idReponse;
+    }
+
+    /**
+     * Set reponse
+     *
+     * @param string $reponse
+     * @return Reponse
+     */
+    public function setReponse($reponse)
+    {
+        $this->reponse = $reponse;
+
+        return $this;
+    }
+
+    /**
+     * Get reponse
+     *
+     * @return string 
+     */
+    public function getReponse()
+    {
+        return $this->reponse;
+    }
+
+    /**
+     * Set uid
+     *
+     * @param string $uid
+     * @return Reponse
+     */
+    public function setUid($uid)
+    {
+        $this->uid = $uid;
+
+        return $this;
+    }
+
+    /**
+     * Get uid
+     *
+     * @return string 
+     */
+    public function getUid()
+    {
+        return $this->uid;
+    }
+
+    /**
+     * Set questionQuestion
+     *
+     * @param \Kevin\EnqueteBundle\Entity\Question $questionQuestion
+     * @return Reponse
+     */
+    public function setQuestionQuestion(\Kevin\EnqueteBundle\Entity\Question $questionQuestion = null)
+    {
+        $this->questionQuestion = $questionQuestion;
+
+        return $this;
+    }
+
+    /**
+     * Get questionQuestion
+     *
+     * @return \Kevin\EnqueteBundle\Entity\Question 
+     */
+    public function getQuestionQuestion()
+    {
+        return $this->questionQuestion;
+    }
 }

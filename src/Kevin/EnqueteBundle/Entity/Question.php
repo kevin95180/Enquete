@@ -49,4 +49,83 @@ class Question
     private $enqueteEnquete;
 
 
+
+    /**
+     * Get idQuestion
+     *
+     * @return integer 
+     */
+    public function getIdQuestion()
+    {
+        return $this->idQuestion;
+    }
+
+    /**
+     * Set libelle
+     *
+     * @param string $libelle
+     * @return Question
+     */
+    public function setLibelle($libelle)
+    {
+        $this->libelle = $libelle;
+
+        return $this;
+    }
+
+    /**
+     * Get libelle
+     *
+     * @return string 
+     */
+    public function getLibelle()
+    {
+        return $this->libelle;
+    }
+
+    /**
+     * Set typeQuestionTypeQuestion
+     *
+     * @param \Kevin\EnqueteBundle\Entity\TypeQuestion $typeQuestionTypeQuestion
+     * @return Question
+     */
+    public function setTypeQuestionTypeQuestion(\Kevin\EnqueteBundle\Entity\TypeQuestion $typeQuestionTypeQuestion = null)
+    {
+        $this->typeQuestionTypeQuestion = $typeQuestionTypeQuestion;
+
+        return $this;
+    }
+
+    /**
+     * Get typeQuestionTypeQuestion
+     *
+     * @return \Kevin\EnqueteBundle\Entity\TypeQuestion 
+     */
+    public function getTypeQuestionTypeQuestion()
+    {
+        return $this->typeQuestionTypeQuestion;
+    }
+
+    /**
+     * Set enqueteEnquete
+     *
+     * @param \Kevin\EnqueteBundle\Entity\Enquete $enqueteEnquete
+     * @return Question
+     */
+    public function setEnqueteEnquete(\Kevin\EnqueteBundle\Entity\Enquete $enqueteEnquete = null)
+    {
+        $this->enqueteEnquete = $enqueteEnquete;
+
+        return $this;
+    }
+
+    /**
+     * Get enqueteEnquete
+     *
+     * @return \Kevin\EnqueteBundle\Entity\Enquete 
+     */
+    public function getEnqueteEnquete()
+    {
+        return $this->enqueteEnquete;
+    }
 }
