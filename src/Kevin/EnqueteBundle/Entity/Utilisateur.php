@@ -7,7 +7,7 @@ use Doctrine\ORM\Mapping as ORM;
 
 /**
  * @ORM\Entity
- * @ORM\Table(name="fos_user")
+ * @ORM\Table(name="utilisateur")
  */
 class Utilisateur extends BaseUser
 {
@@ -18,7 +18,7 @@ class Utilisateur extends BaseUser
      * @ORM\Id
      * @ORM\GeneratedValue(strategy="IDENTITY")
      */
-    private $idUtilisateur;
+    protected $id;
 
     public function __construct()
     {
@@ -27,12 +27,12 @@ class Utilisateur extends BaseUser
     }
 
     /**
-     * Get idUtilisateur
+     * Get id
      *
      * @return integer 
      */
-    public function getIdUtilisateur()
+    public function getId()
     {
-        return $this->idUtilisateur;
+        return $this->id;
     }
 }
