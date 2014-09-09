@@ -1,0 +1,11 @@
+{% macro formGroup(field, label) %}
+    <div class="form-group{% if field.vars.errors|length %}} has-error{% endif %}">
+        {{form_label(field, label, {'label_attr': {'class': 'col-sm-2 control-label'} })}}
+        <div class="col-sm-10">
+        {{form_widget(field, {'attr': {'class':'form-control', 'placeholder':label} })}}
+        {% if field.vars.errors|length %}
+        <span class="help-block">{{form_errors(field)}}</span>
+        {% endif %}
+        </div>
+    </div>
+{% endmacro %}{# empty Twig template #}

@@ -1,19 +1,15 @@
-kevin_enquete_homepage:
-    path:     /hello/{name}
-    defaults: { _controller: KevinEnqueteBundle:Default:index }
-
-lister:
-    path:     /lister
+kevin_enquete_lister:
+    path:     /
     defaults: { _controller: KevinEnqueteBundle:Question:lister }
 
-ajouter:
+kevin_enquete_ajouter:
     path:     /ajouter
     defaults: { _controller: KevinEnqueteBundle:Question:ajouter }
 
-_supprimer:
-    path:     /Supprimer
-    defaults: { _controller: KevinEnqueteBundle:Question:Supprimer }
+kevin_enquete_supprimer:
+    path:     /supprimer
+    defaults: { _controller: KevinEnqueteBundle:Question:supprimer }
 
-modifier:
+kevin_enquete_modifier:
     path:     /modifier
     defaults: { _controller: KevinEnqueteBundle:Question:modifier }

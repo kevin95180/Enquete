@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Enquete{% endblock %}</title>
+        <link rel="stylesheet" href="{{asset('bundles/kevinEnquete/css/bootstrap.css')}}">
+        <link rel="stylesheet" href="{{asset('bundles/kevinEnquete/js/select2-3.5.1/select2-bootstrap.css')}}">
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% include 'KevinEnqueteBundle::menu.html.twig' %}
+        <div class="container">
+            
+            {% block contenu %} {% endblock %}
+        </div>
+        <script src="{{asset('bundles/kevinEnquete/js/jquery-1.11.1.js')}}"></script>
+        <script src="{{asset('bundles/kevinEnquete/js/bootstrap.js')}}"></script>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

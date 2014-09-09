@@ -18,9 +18,9 @@ class QuestionController extends Controller
                 // ...
             ));    }
 
-    public function SupprimerAction()
+    public function supprimerAction()
     {
-        return $this->render('KevinEnqueteBundle:Question:Supprimer.html.twig', array(
+        return $this->render('KevinEnqueteBundle:Question:supprimer.html.twig', array(
                 // ...
             ));    }
 
