@@ -4,13 +4,12 @@
 {% block title %}Enquete{% endblock %}
 
 {% block contenu %}
-    <h2>Créer une question: </h2>
+    <h2>Créer une enquete: </h2>
 
     {{form_start(form, {'attr':{'class':'form-horizontal', 'role':'form', 'novalidate':''} })}}
 
-    {{bootstrap.formGroup(form.libelle, 'libelle')}}
-    {{bootstrap.formGroup(form.typeQuestionTypeQuestion, 'Type de question')}}
-    {{bootstrap.formGroup(form.enqueteEnquete, 'Enquete')}}
+    {{bootstrap.formGroup(form.titre, 'Titre')}}
+    {{bootstrap.formGroup(form.utilisateurUtilisateur, 'Utilisateur')}}
 
     <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">

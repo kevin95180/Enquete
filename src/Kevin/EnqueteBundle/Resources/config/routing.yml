@@ -3,13 +3,45 @@ kevin_enquete_lister:
     defaults: { _controller: KevinEnqueteBundle:Question:lister }
 
 kevin_enquete_ajouter:
-    path:     /ajouter
+    path:     /question/ajouter
     defaults: { _controller: KevinEnqueteBundle:Question:ajouter }
 
 kevin_enquete_supprimer:
-    path:     /supprimer
+    path:     /question/supprimer
     defaults: { _controller: KevinEnqueteBundle:Question:supprimer }
 
 kevin_enquete_modifier:
-    path:     /modifier
+    path:     /question/modifier
     defaults: { _controller: KevinEnqueteBundle:Question:modifier }
+    
+kevin_enquete_enquete_ajouter:
+    path:     /enquete/ajouter
+    defaults: { _controller: KevinEnqueteBundle:Enquete:ajouter }
+
+kevin_enquete_enquete_supprimer:
+    path:     /enquete/supprimer
+    defaults: { _controller: KevinEnqueteBundle:Enquete:supprimer }
+
+kevin_enquete_enquete_lister:
+    path:     /enquete/lister
+    defaults: { _controller: KevinEnqueteBundle:Enquete:lister }
+
+kevin_enquete_enquete_modifier:
+    path:     /enquete/modifier
+    defaults: { _controller: KevinEnqueteBundle:Enquete:modifier }
+
+kevin_enquete_typeQuestion_ajouter:
+    path:     /typeQuestion/ajouter
+    defaults: { _controller: KevinEnqueteBundle:TypeQuestion:ajouter }
+
+kevin_enquete_typeQuestion_lister:
+    path:     /typeQuestion/lister
+    defaults: { _controller: KevinEnqueteBundle:TypeQuestion:lister }
+
+kevin_enquete_typeQuestion_modifier:
+    path:     /typeQuestion/modifier
+    defaults: { _controller: KevinEnqueteBundle:TypeQuestion:modifier }
+
+kevin_enquete_typeQuestion_supprimer:
+    path:     /typeQuestion/supprimer
+    defaults: { _controller: KevinEnqueteBundle:TypeQuestion:supprimer }

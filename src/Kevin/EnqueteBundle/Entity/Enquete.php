@@ -95,4 +95,8 @@ class Enquete
     {
         return $this->utilisateurUtilisateur;
     }
+    
+    public function __toString() {
+        return $this->titre;
+    }
 }
