@@ -27,7 +27,7 @@ class QuestionController extends Controller
             $em->persist($question);
             $em->flush();
 
-//            $this->get("session")->getFlashBag()->add("success", "groupe bien ajouté");
+//            $this->get("session")->getFlashBag()->add("success", "Création de la question");
 
             return $this->redirect($this->generateUrl("kevin_enquete_lister"));
         }

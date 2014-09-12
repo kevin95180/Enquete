@@ -13,6 +13,16 @@
         {% include 'KevinEnqueteBundle::menu.html.twig' %}
         <div class="container">
             
+        {% for message in app.session.flashbag.get("success") %}
+        <div class="alert alert-success">
+            <button data-dismiss="alert" class="close" type="button">
+                <span aria-hidden="true">x</span>
+                <span class="sr-only">Close</span>
+            </button>
+            {{message}}
+        </div>
+        {% endfor %}
+            
             <div>
                 {% if is_granted("IS_AUTHENTICATED_REMEMBERED") %}
                     {{ 'layout.logged_in_as'|trans({'%username%': app.user.username}, 'FOSUserBundle') }} |

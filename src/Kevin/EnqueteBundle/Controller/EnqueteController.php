@@ -21,7 +21,7 @@ class EnqueteController extends Controller
             $em->persist($enquete);
             $em->flush();
 
-//            $this->get("session")->getFlashBag()->add("success", "groupe bien ajouté");
+//           $this->get("session")->getFlashBag()->add("success", "Enquete créée");
 
             return $this->redirect($this->generateUrl("kevin_enquete_typeQuestion_ajouter"));
         }
